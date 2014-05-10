@@ -33,6 +33,7 @@ import android.os.SystemProperties;
 import android.provider.Settings;
 import android.util.Log;
 
+import com.android.internal.R;
 import com.android.systemui.SystemUI;
 import com.android.internal.R;
 
