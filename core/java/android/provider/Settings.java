@@ -1857,6 +1857,18 @@ public final class Settings {
          */
         public static final int END_BUTTON_BEHAVIOR_DEFAULT = END_BUTTON_BEHAVIOR_SLEEP;
 
+	/**
+	* Enable blocking wakelock
+	* @hide
+	*/
+	public static final String WAKELOCK_BLOCKING_ENABLED = "wakelock_blocking_enabled";
+
+	/**
+	* List of wakelock blocks selected
+	* @hide
+	*/
+	 public static final String WAKELOCK_BLOCKING_LIST = "wakelock_blocking_list";
+
         /**
          * Is advanced settings mode turned on. 0 == no, 1 == yes
          * @hide
@@ -4138,6 +4150,14 @@ public final class Settings {
          */
         public static final String RECENTS_USE_OMNISWITCH = "recents_use_omniswitch";
 
+       /**
+         * Allows to disable weather in locskcreen
+         * 1 = use system default (show)
+         * 0 = hide Weather
+         * @hide
+         */
+        public static final String LOCKSCREEN_WEATHER = "lockscreen_weather";
+
         /**
          * Heads Up Notifications
          *
@@ -4219,52 +4239,6 @@ public final class Settings {
          * @hide
          */
         public static final String LIVE_DISPLAY_HINTED = "live_display_hinted";
-
-        /**
-         * Whether to show the weather info on the lock screen
-         * @hide
-         */
-        public static final String LOCK_SCREEN_SHOW_WEATHER = "lock_screen_show_weather";
-
-        /**
-         * Whether to show the weather location lock screen
-         * @hide
-         */
-        public static final String LOCK_SCREEN_SHOW_WEATHER_LOCATION = "lock_screen_show_weather_location";
-		
-        /**
-         * Whether to show the weather update timestamp on the lock screen
-         * @hide
-         */
-        public static final String LOCK_SCREEN_SHOW_WEATHER_TIMESTAMP = "lock_screen_show_weather_timestamp";
-
-        /**
-         * Weather condition icon on the lock screen
-         * 0: monochrome
-         * 1: colored
-         * 2: vclouds
-         * default: 0
-         * @hide
-         */
-        public static final String LOCK_SCREEN_WEATHER_CONDITION_ICON = "lock_screen_weather_condition_icon";
-
-        /**
-         * Whether to colorize all weather condition icons on the lock screen
-         * @hide
-         */
-        public static final String LOCK_SCREEN_WEATHER_COLORIZE_ALL_ICONS = "lock_screen_weather_colorize_all_icons";
-
-        /**
-         * Color of the text on the lock screen
-         * @hide
-         */
-        public static final String LOCK_SCREEN_TEXT_COLOR = "lock_screen_text_color";
-
-        /**
-         * Color of the icons on the lock screen
-         * @hide
-         */
-        public static final String LOCK_SCREEN_ICON_COLOR = "lock_screen_icon_color";
 
         /**
          * Settings to backup. This is here so that it's in the same place as the settings
@@ -9095,6 +9069,7 @@ public final class Settings {
           * @hide
           */
         public static final String TUNE_AWAY_STATUS = "tune_away";
+
     }
 
     /**
