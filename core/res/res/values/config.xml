@@ -2364,4 +2364,7 @@
     <string name="config_defaultQuickSettingsTiles">wifi,bt,cell,airplane,rotation,flashlight,location,cast</string>
 
     <string-array name="config_externalCMServices"></string-array>
+    
+    <!-- Doze: force using accelerometer as pick up sensor -->
+    <bool name="config_dozeUseAccelerometer">false</bool>
 </resources>
